@@ -1,3 +1,4 @@
+//zoom(var)
 zoom(val)
   zoom: val;
   -moz-transform: scale(val);
@@ -9,7 +10,23 @@ zoom(val)
   transform: scale(val);
   transform-origin: 0 0;
 
+//border-radius(val)
 border-radius(val)
   -webkit-border-radius: val;
   -moz-border-radius: val;
   border-radius: val;
+
+
+/*
+*  $placeholder =
+*        color #000
+*        background-color #FFF
+*
+*  placeholder(input,$placeholder)
+*  placeholder(textarea,$placeholder)
+*/
+placeholder(target,value)
+  for prefix, i in '::-webkit-input-placeholder' '::-moz-placeholder' ':-moz-placeholder' ':-ms-input-placeholder'
+    {target}{prefix} {
+      {value}
+    }
