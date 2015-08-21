@@ -1,5 +1,4 @@
-//zoom(var)
-zoom(val)
+fn-zoom(val)
   zoom: val;
   -moz-transform: scale(val);
   -moz-transform-origin: 0 0;
@@ -10,12 +9,10 @@ zoom(val)
   transform: scale(val);
   transform-origin: 0 0;
 
-//border-radius(val)
-border-radius(val)
+fn-border-radius(val)
   -webkit-border-radius: val;
   -moz-border-radius: val;
   border-radius: val;
-
 
 /*
 *  $placeholder =
@@ -25,8 +22,23 @@ border-radius(val)
 *  placeholder(input,$placeholder)
 *  placeholder(textarea,$placeholder)
 */
-placeholder(target,value)
+fn-placeholder(target,value)
   for prefix, i in '::-webkit-input-placeholder' '::-moz-placeholder' ':-moz-placeholder' ':-ms-input-placeholder'
     {target}{prefix} {
       {value}
     }
+
+fn-transition(target, duration = 0.5s, delay = 0s, type = ease-in-out)
+  transition-property: target;
+  transition-duration: duration;
+  transition-timing-function: type;
+  transition-delay: delay;
+  -webkit-transition-property: target;
+  -webkit-transition-duration: duration;
+  -webkit-transition-timing-function: type;
+  -webkit-transition-delay: delay;
+
+fn-effect(val)
+  -ms-transform: val; /* IE 9 */
+  -webkit-transform: val; /* Chrome, Safari, Opera */
+  transform: val;
