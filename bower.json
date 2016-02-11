@@ -1,0 +1,23 @@
+{
+  "name": "stylus-essential",
+  "homepage": "https://github.com/PhilippeAssis/stylus-essential",
+  "authors": [
+    "Philippe Assis <assis@philippeassis.com>"
+  ],
+  "description": "functions for stylus-lang",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "stylus",
+    "functions",
+    "methods"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
