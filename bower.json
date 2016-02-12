@@ -6,7 +6,7 @@
     "Philippe Assis <assis@philippeassis.com>"
   ],
   "description": "functions for stylus-lang",
-  "main": "",
+  "main": "essential.styl",
   "moduleType": [],
   "keywords": [
     "stylus",
