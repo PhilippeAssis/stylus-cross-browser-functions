@@ -16,19 +16,16 @@ e-border-radius(val)
   -moz-border-radius: val;
   border-radius: val;
 
-/*
-*  $placeholder =
-*        color #000
-*        background-color #FFF
-*
-*  placeholder(input,$placeholder)
-*  placeholder(textarea,$placeholder)
-*/
-e-placeholder(target,value)
-  for prefix, i in '::-webkit-input-placeholder' '::-moz-placeholder' ':-moz-placeholder' ':-ms-input-placeholder'
-    {target}{prefix} {
-      {value}
-    }
+e-kit(prop, args)
+  -webkit-{prop} args
+  -moz-{prop} args
+  {prop} args
+
+e-placeholder(args)
+  ::-webkit-input-placeholder args
+  ::--moz-placeholder args
+  ::-moz-placeholder args
+  ::-ms-input-placeholder args
 
 e-transition(target, duration = 0.5s, delay = 0s, type = ease-in-out)
   transition-property: target;
